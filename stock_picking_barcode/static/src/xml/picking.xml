@@ -8,10 +8,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-                        <h4 class="modal-title" id="myModalLabel">Choose a location</h4>
+                        <h4 class="modal-title" id="myModalLabel">Elija una ubicación</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Scan a location or select it in the list below</p>
+                        <p>Escanear una ubicación o seleccionarla en la lista de abajo</p>
                         <select id="js_loc_select" class="form-control">
                             <option class="js_loc_option" data-loc-id="false"></option>
                             <t t-foreach="widget.get_location()" t-as="loc">
@@ -20,8 +20,8 @@
                         </select>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary js_validate_location">Change Location</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary js_validate_location">Cambiar locación</button>
                     </div>
                 </div>
             </div>
@@ -35,12 +35,12 @@
                         <h4 class="modal-title" id="myModalLabel">Create Lot</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Scan a lot or type it below (leave empty to generate one automatically)</p>
+                        <p>Escanear un lote o escriba a continuación (dejar en blanco para generar uno automáticamente)</p>
                         <input class='col-xs-6 js_lot_scan' type='text'/>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary js_validate_lot">Create Lot</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary js_validate_lot">Creat Lote</button>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-                        <h4 class="modal-title" id="myModalLabel">Configure package</h4>
+                        <h4 class="modal-title" id="myModalLabel">Configurar Paquete</h4>
                     </div>
                     <div class="modal-body">
                         <p>Package type</p>
@@ -63,8 +63,8 @@
                         </select>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary js_validate_pack">Validate package</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary js_validate_pack">Validar Paquete</button>
                     </div>
                 </div>
             </div>
@@ -77,8 +77,8 @@
                     </div>
                     <div class="col-sm-8 col-xs⁻6 text-right">
 
-                    <button type="button" class='btn btn-default js_pick_done'> Create backorder </button>
-                    <button type="button" class='btn btn-default js_pick_print'> Print </button>
+                    <button type="button" class='btn btn-default js_pick_done'> Crear Pedido Pendiente </button>
+                    <button type="button" class='btn btn-default js_pick_print'> Imprimir </button>
 
                     </div>
                 </div>
@@ -89,8 +89,8 @@
                 <div class="col-md-3 col-sm-4 col-xs-6">
                     <h3><strong>
                         <select id="js_select" class="form-control">
-                            <option value="ToDo" id="js_select_todo">Operations ToDo</option>
-                            <option value="Processed" id="js_select_processed">Operations Processed</option>
+                            <option value="ToDo" id="js_select_todo">Operaciones Pendientes</option>
+                            <option value="Processed" id="js_select_processed">Operaciones Procesadas</option>
                         </select>
                     </strong>
                     </h3>
@@ -98,7 +98,7 @@
                 <div class="col-md-3 col-sm-4 col-xs-6">
                     <h2>
                         <div class="input-group">
-                            <input type="text" class="form-control oe_searchbox" placeholder="Filter by location..."/>
+                            <input type="text" class="form-control oe_searchbox" placeholder="Filtrar por ubicacion..."/>
                             <span class="input-group-btn">
                                 <button class="btn btn-danger js_clear_search" type="button">x</button>
                             </span>
@@ -107,8 +107,8 @@
                 </div>
                 <div class="col-md-6 col-sm-4 col-xs-12 text-right">
                     <h3>
-                        <button type="button" class='btn btn-default js_pick_pack js_putinpack'> Put in Pack </button>
-                        <button type="button" class='btn btn-danger js_drop_down fa fa-download'> Put in Cart </button>
+                        <button type="button" class='btn btn-default js_pick_pack js_putinpack'> Poner en paquete </button>
+                        <button type="button" class='btn btn-danger js_drop_down fa fa-download'> Poner en el carro </button>
                     </h3>
                 </div>
             </div>
@@ -118,8 +118,8 @@
             <table class='table table-condensed js_op_table_todo'>
                 <thead>
                     <tr>
-                        <th class="text-left">Product</th>
-                        <th class='text-center' width="150">Scanned</th>
+                        <th class="text-left">Producto</th>
+                        <th class='text-center' width="150">Scaneada</th>
                         <th class='text-center'>Todo</th>
                         <th>From</th>
                         <th>To</th>
@@ -165,18 +165,18 @@
                                     </button>
                                     <ul class="dropdown-menu" role="menu">
                                         <t t-if="row.cols.product_id">
-                                            <li><a class="js_create_lot" href="#">Create &#47; Change Lot</a></li>
+                                            <li><a class="js_create_lot" href="#">Crear &#47; Cambiar Lote</a></li>
                                         </t>
                                         <t t-if="!row.cols.head_container &amp;&amp; !row.cols.container">
-                                            <li><a class="js_change_src" href="#">Change source location</a></li>
-                                            <li><a class="js_change_dst" href="#">Change destination location</a></li>
+                                            <li><a class="js_change_src" href="#">Cambiar Localizacion Origen</a></li>
+                                            <li><a class="js_change_dst" href="#">Cambiar Localizacion Destino</a></li>
                                         </t>
                                         <t t-if="row.cols.head_container">
-                                            <li><a class="js_pack_change_dst" href="#">Change destination location</a></li>
+                                            <li><a class="js_pack_change_dst" href="#">Cambiar Localizacion Destino</a></li>
                                             <li class="divider"></li>
-                                            <li><a class="js_pack_configure" href="#">Configure package</a></li>
-                                            <li><a class="js_delete_pack" href="#">Remove from package</a></li>
-                                            <li><a class="js_print_pack" href="#">Print package label</a></li>
+                                            <li><a class="js_pack_configure" href="#">Configurar paquete</a></li>
+                                            <li><a class="js_delete_pack" href="#">Quitar del paquete</a></li>
+                                            <li><a class="js_print_pack" href="#">Imprimir etiqueta de paquete</a></li>
                                         </t>
                                     </ul>
                                 </div>
@@ -190,11 +190,11 @@
 
     <t t-name="PickingSearchResults">
         <div class="panel-heading">
-            <h3 class="panel-title">Search Results</h3>
+            <h3 class="panel-title">Resultados de Busqueda</h3>
         </div>
         <div class="panel-body">
             <t t-if="results.length === 0">
-                <strong>No picking found.</strong>
+                <strong>No se encontraron guias.</strong>
             </t>
             <t t-if="results.length > 0">
                 <t t-foreach="results" t-as="picking">
@@ -217,16 +217,16 @@
                     <input type='text' class="oe_searchbox form-control pull-left" placeholder='Search'/>
                 </div>
                 <div class="navbar-header navbar-form navbar-right">
-                    <button type="button" class="btn btn-danger js_pick_quit pull-right">Quit</button>
+                    <button type="button" class="btn btn-danger js_pick_quit pull-right">Salir</button>
                 </div>
 
             </div>
         </div>
         <div class="container">
 
-            <h1 class="js_title_label">Select your operation</h1>
+            <h1 class="js_title_label">Seleccione su operacion</h1>
             <div class='js_picking_not_found alert alert-warning hidden'>
-                Scanned picking could not be found
+                No se puedo encontrar el escaneo de guia
             </div>
 
             <div class='js_picking_search_results panel panel-info hidden'>
@@ -242,7 +242,7 @@
                             <t t-if="type.code == 'internal'" ><span class="fa fa-retweet fa-2x"></span></t>
                             <strong><span><t t-esc="type.complete_name"/></span></strong>
                             <div><t t-if="widget.pickings_by_type[type.id].length > 0">
-                                <span class='badge'><t t-esc="widget.pickings_by_type[type.id].length" /> picking(s) </span>
+                                <span class='badge'><t t-esc="widget.pickings_by_type[type.id].length" /> guia(s) </span>
                             </t></div>
                         </div>
                     </div>
@@ -259,8 +259,8 @@
                     <button type="button" class="btn btn-primary navbar-btn js_pick_menu">Menu</button>
                 </div>
                 <div class="navbar-right">
-                    <button type="button" class="btn btn-default navbar-btn js_pick_prev">&lt; Previous</button>
-                    <button type="button" class="btn btn-default navbar-btn js_pick_next">Next &gt;</button>
+                    <button type="button" class="btn btn-default navbar-btn js_pick_prev">&lt; Anterior</button>
+                    <button type="button" class="btn btn-default navbar-btn js_pick_next">Siguiente &gt;</button>
                 </div>
             </div>
         </div>
@@ -268,7 +268,7 @@
         <div class="container">
             <div class='oe_placeholder_picking_editor'/>
             <div class="text-right small oe_reload_op">
-                The reserved stock changed. You might want to <button class="btn btn-default js_reload_op"> Recompute </button> the operations.
+                La reserva de stock cambió. Es posible que se desee <button class="btn btn-default js_reload_op"> Recalcular </button> las operaciones.
             </div>
         </div>
     </t>
