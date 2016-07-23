@@ -11,8 +11,8 @@
                         <div class="col-xs-6 col-xs-offset-6 o_kanban_primary_right">
                             <a name="open_barcode_interface" type="object">
                                 <img src="/stock_picking_barcode/static/src/img/scan.png"
-                                    alt="Click to launch the barcode interface"
-                                    class="oe_stock_scan_image" title="Click to launch the barcode interface"/>
+                                    alt="Haga clic para iniciar la interfaz de c&oacute;digo de barras"
+                                    class="oe_stock_scan_image" title="Haga clic para iniciar la interfaz de c&oacute;digo de barras"/>
                             </a>
                         </div>
                     </div>
