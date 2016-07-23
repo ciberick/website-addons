@@ -120,9 +120,9 @@
                     <tr>
                         <th class="text-left">Producto</th>
                         <th class='text-center' width="150">Scaneada</th>
-                        <th class='text-center'>Todo</th>
-                        <th>From</th>
-                        <th>To</th>
+                        <th class='text-center'>Por hacer</th>
+                        <th>Origen</th>
+                        <th>Destino</th>
                     </tr>
                 </thead>
 
