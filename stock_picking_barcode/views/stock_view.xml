@@ -20,7 +20,7 @@
         </record>
 
         <record id="action_picking_form" model="ir.actions.act_window">
-            <field name="name">New Transfer</field>
+            <field name="name">Nueva Transferencia</field>
             <field name="res_model">stock.picking</field>
             <field name="type">ir.actions.act_window</field>
             <field name="view_type">form</field>
@@ -35,9 +35,9 @@
             <field name="search_view_id" ref="stock.view_picking_internal_search"/>
             <field name="help" type="html">
               <p class="oe_view_nocontent_create">
-                Click here to create a new transfer.
+                Click para crear una nueva transferencia.
               </p><p>
-                You can either do it immediatly or mark it as Todo for future processing. Use your scanner to validate the transferred quantity quicker.
+                Usted puede hacerlo de inmediato o marcarlo como Pendiente para el procesamiento futuro. Utilizar el esc&aacute;ner para validar la cantidad transferida m&aacute;s r&aacute;pido.
               </p>
             </field>
         </record>
